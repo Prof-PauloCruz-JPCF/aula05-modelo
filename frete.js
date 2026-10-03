@@ -1,12 +1,12 @@
-// frete.js = CODIGO DE PRODUCAO: calcula o frete de uma entrega
+// frete.js = CÓDIGO DE PRODUÇÃO: calcula o frete de uma entrega
 
-// recebe a distancia da entrega em quilometros e devolve o frete em reais
+// recebe a distância da entrega em quilômetros e devolve o frete em reais
 function calcularFrete(distanciaKm) {
-  // distancia negativa nao existe: avisa que algo deu errado
+  // distância negativa não existe: avisa que algo deu errado
   if (distanciaKm < 0) {
-    throw new Error('distancia invalida');
+    throw new Error('distância inválida');
   }
-  // ate 5 km: taxa fixa de R$ 7
+  // até 5 km: taxa fixa de R$ 7
   if (distanciaKm <= 5) {
     return 7;
   }
@@ -14,5 +14,5 @@ function calcularFrete(distanciaKm) {
   return 7 + (distanciaKm - 5);
 }
 
-// deixa a funcao visivel para outros arquivos (os testes)
+// deixa a função visível para outros arquivos (os testes)
 module.exports = { calcularFrete };
