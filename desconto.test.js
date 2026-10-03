@@ -1,10 +1,10 @@
-// desconto.test.js = CODIGO DE TESTE (nao vai para o cliente)
+// desconto.test.js = CÓDIGO DE TESTE (não vai para o cliente)
 
-// executor de testes que ja vem dentro do Node (nada a instalar)
+// executor de testes que já vem dentro do Node (nada a instalar)
 const test = require('node:test');
 // 'assert' = comparadores: conferem obtido x esperado
 const assert = require('node:assert');
-// traz a funcao que sera testada
+// traz a função que será testada
 const { calcularDesconto } = require('./desconto');
 
 // UM teste: o texto descreve o esperado, em linguagem humana
@@ -16,13 +16,13 @@ test('10% de desconto em 200 resulta em 180', () => {
 });
 
 // SEGUNDO teste: agora o caminho do ERRO (percentual absurdo)
-test('percentual acima de 100 lanca erro', () => {
-  // assert.throws passa SO SE a funcao dentro dele der erro
-  // e a mensagem do erro combinar com /percentual invalido/
+test('percentual acima de 100 lança erro', () => {
+  // assert.throws passa SÓ SE a função dentro dele der erro
+  // e a mensagem do erro combinar com /percentual inválido/
   assert.throws(
-    // 150% nao existe: a funcao DEVE lancar erro
+    // 150% não existe: a função DEVE lançar erro
     () => calcularDesconto(200, 150),
     // a mensagem esperada
-    /percentual invalido/
+    /percentual inválido/
   );
 });
