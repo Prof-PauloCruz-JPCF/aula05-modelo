@@ -1,14 +1,15 @@
 # Aula 05 - Testes automatizados no pipeline (ISW032)
 
-Repositorio-modelo da pratica da Aula 05 de Integracao e Entrega Continua
+Repositório-modelo da prática da Aula 05 de Integração e Entrega Contínua
 (Fatec Zona Leste - DSM).
 
-Para criar o seu proprio repositorio a partir deste modelo, use o botao verde
-**Use this template** e depois **Create a new repository**.
+Para criar o seu próprio repositório a partir deste modelo, use o botão verde
+**Use this template** (Usar este modelo) e depois **Create a new repository**
+(Criar um novo repositório).
 
 ## Arquivos
 
-- `desconto.js` e `desconto.test.js`: funcao de desconto e seus testes.
-- `frete.js` e `frete.test.js`: funcao de frete e (por enquanto) um unico teste.
+- `desconto.js` e `desconto.test.js`: função de desconto e seus testes.
+- `frete.js` e `frete.test.js`: função de frete e (por enquanto) um único teste.
 - `package.json`: define os comandos `npm test` e `npm run cobertura`.
-- `.github/workflows/testes.yml`: o robo do GitHub que roda os testes a cada push.
+- `.github/workflows/testes.yml`: o robô do GitHub que roda os testes a cada push.
