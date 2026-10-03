@@ -9,8 +9,8 @@ on: push
 jobs:
   # nome do trabalho (job) deste workflow
   testar:
-    # tipo de máquina temporária que o robô usa (Linux, já com Node instalado)
-    runs-on: ubuntu-latest
+    # tipo de máquina temporária que o robô usa (Linux Ubuntu 24.04, já com Node instalado)
+    runs-on: ubuntu-24.04
     steps:
       # passo 1: baixa o código do repositório para dentro da máquina
       - uses: actions/checkout@v6
