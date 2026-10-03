@@ -1,16 +1,16 @@
-// desconto.js = CODIGO DE PRODUCAO (o que o cliente usa)
+// desconto.js = CÓDIGO DE PRODUÇÃO (o que o cliente usa)
 
-// FUNCAO = bloco de codigo com nome: recebe valores e
-// devolve um resultado. Aqui: o preco e o percentual
+// FUNÇÃO = bloco de código com nome: recebe valores e
+// devolve um resultado. Aqui: o preço e o percentual
 function calcularDesconto(preco, percentual) {
-  // protecao: percentual negativo ou acima de 100 nao existe
+  // proteção: percentual negativo ou acima de 100 não existe
   if (percentual < 0 || percentual > 100) {
-    // 'throw' interrompe a funcao e avisa que algo deu errado
-    throw new Error('percentual invalido');
+    // 'throw' interrompe a função e avisa que algo deu errado
+    throw new Error('percentual inválido');
   }
-  // preco final = preco - desconto (preco x percentual/100)
+  // preço final = preço - desconto (preço x percentual/100)
   return preco - preco * (percentual / 100);
 }
 
-// deixa a funcao visivel para outros arquivos (os testes)
+// deixa a função visível para outros arquivos (os testes)
 module.exports = { calcularDesconto };
